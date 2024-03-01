@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+<body>
+<header>
+    <img class="header_image" src="image/heading.png" alt="">
+</header>
+<section>
+    <div class="input-container">
+        <input class="input__todo" onkeydown="addTaskForEnter(event)" type="text"><button type="button" onclick="addTask()" class="btn">Add task</button>
+</div>
+    <div class="stroka"></div>
+    <ul class="ul">
+
+    </ul>
+
+
+</section>
+    <template class="element">
+        <li class="list_task"><input onclick="taskComplete(event)" type="checkbox" class="taskElement"><span class="task"></span><button onclick="clearFunc(event)" class="btn_delete"><img class="img_block" src="image/Trash.png" alt=""></button></li>
+    </template>
+<script defer src="script.js"></script>
+</body>
+</html>

@@ -10,9 +10,6 @@ let task = []
 let taskCheckBox = document.querySelector(".list_task")
 
 
-// function enterNum() {
-//     console.log("test");
-// }
 function addTaskForEnter (e) {
     if (e.keyCode === 13) {
         document.querySelector(".btn").click()
